@@ -1,11 +1,11 @@
 # Test de React Native
 
-Mas allá de la validez de la solución, se desea un código entendible, manejable y performante.
+Más allá de la validez de la solución, se desea un código entendible, manejable y performante.
 
 - **Requerimientos:** indica lo que se debe obtener como resultado
-- **Evaluación:** los puntos que se tendrán en cuanta para evaluar la solución.
+- **Evaluación:** los puntos que se tendrán en cuenta para evaluar la solución.
 
-**OBS**: en caso de no especificarse detalles, el desarrollador puede implementar la solución como mejor le parezca teniendo en cuanta los
+**OBS**: en caso de no especificarse detalles, el desarrollador puede implementar la solución como mejor le parezca teniendo en cuenta los
 Requerimientos y la Evaluación.
 
 ## Listado de Usuarios
@@ -14,7 +14,7 @@ Requerimientos y la Evaluación.
 
 Primeramente, debes instalar (si no lo tienes aún) React Native en tu computadora, siguiendo los pasos de su [página oficial](https://reactnative.dev/docs/environment-setup) utilizando **react-native-cli**.
 
-Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://reqres.in/). No necesita crearse ninguna cuenta, basta con consumir sus distintos endpoints, la que utilizaremos en este test son:
+Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://reqres.in/). No se necesita crear ninguna cuenta, basta con consumir sus distintos endpoints, la que utilizaremos en este test son:
 
 - Listado de usuarios: Endpoint con un listado simple de usuarios
   - Metodo: GET
@@ -47,14 +47,14 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
     ...
   }
   ```
-  Y otro que obtenga el detalle de un usuario en base a un parametro id y retorne el resultado. Ej:
+  Y otro que obtenga el detalle de un usuario en base a un parámetro id y retorne el resultado. Ej:
   ```js
     const getUserDetail = (id) => {
       ...
     }
   ```
-- Dibjar el listado de usuarios mediante el componente [FlatList de React native](https://reactnative.dev/docs/flatlist). No olvides de utilizar su método keyExtractor para especificar el id de cada registro.
-- Al presionar en un registro, redirigir la pantalla UserDetail y pasar el parametro del ID. Puedes utilizar los [handling touches](https://reactnative.dev/docs/handling-touches#__docusaurus) Ej:
+- Dibujar el listado de usuarios mediante el componente [FlatList de React native](https://reactnative.dev/docs/flatlist). No olvides de utilizar su método keyExtractor para especificar el id de cada registro.
+- Al presionar en un registro, redirigir la pantalla UserDetail y pasar el parámetro del ID. Puedes utilizar los [handling touches](https://reactnative.dev/docs/handling-touches#__docusaurus) Ej:
 
   ```jsx
   <FlatList
@@ -64,9 +64,9 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
   />
   ```
 
-- Para la navegacion, utilizar el codigo base del repositorio el cual ya tiene instalado el package
+- Para la navegación, utilizar el código base del repositorio el cual ya tiene instalado el package
   [React Navigation v5](https://reactnavigation.org/docs/getting-started).
-  Solo te importara utilizar el prop navigation y su método **navigate**. Ej:
+  Solo te importará utilizar el prop navigation y su método **navigate**. Ej:
 
   ```js
   const handlePressUser = () => {
@@ -76,14 +76,14 @@ Para este test utilizaremos un fake api que puedes encontrarlo [aquí](https://r
   };
   ```
 
-- En la pantalla UserDetail, en el lifecycle correspondiente consumir el thunk para obtener el detalle del id recibido desde el parametro del prop navigation.
+- En la pantalla UserDetail, en el lifecycle correspondiente consumir el thunk para obtener el detalle del id recibido desde el parámetro del prop navigation.
 
 ### Evaluación:
 
 - Lifecycle de componentes: Utilizar correctamente las instancias de renderizado de los componentes. NO USAR METODOS DEPRECADOS.
-- Atomicidad de componentes: Los componentes hijos deben contener la menor cantidad de lógica posible y realizar un renderizado/actión específica.
+- Atomicidad de componentes: Los componentes hijos deben contener la menor cantidad de lógica posible y realizar un renderizado/acción específica.
 - Utilización correcta de estilos: Especialmente en la maquetación de componentes.
-- Escalado de componentes: Utilizar [react-native-size-matters](https://github.com/nirsky/react-native-size-matters) y aplicar su escalado horizontal o vertical segun sea necesario.
+- Escalado de componentes: Utilizar [react-native-size-matters](https://github.com/nirsky/react-native-size-matters) y aplicar su escalado horizontal o vertical según sea necesario.
 
 ### Consideraciones opcionales
 
